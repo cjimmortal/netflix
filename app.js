@@ -5,6 +5,18 @@ function hideMenu(){
     document.getElementById("hiddden-menu").style.display="none";
 }
 
+function showsearch(){
+    document.getElementById("c-search").style.display="block";
+    document.getElementById("search").style.opacity="1";
+    document.getElementById("home").style.opacity="0.5";
+
+    document.getElementById("c-content").style.display="none";
+}
+
+function showhome(){
+    window.location.reload();
+}
+
 
 // this code is for category focus
 function  displayPlaylist2(){

@@ -18,8 +18,8 @@
             <div class="sidebar">
                 <img class="s-logo" src="assets/img/spotify-logo.PNG">
                 <div class="s-modules">
-                    <p><img class="s-modules-logo" src="assets/img/home.png"><a href="javascript:window.location.href=window.location.href">Home</a></p>
-                    <p><img class="s-modules-logo" src="assets/img/search.png"><a>Search</a></p>
+                    <p id="home"  onclick="showhome()" style="opacity: 1;"><img class="s-modules-logo" src="assets/img/home.png"><a>Home</a></p>
+                    <p id="search" onclick="showsearch()"><img class="s-modules-logo" src="assets/img/search.png"><a>Search</a></p>
                     <p><img class="s-modules-logo" src="assets/img/library.png"><a>Your Library</a></p>
                     <br>
                     <p><img class="s-modules-logo" src="assets/img/create.png"><a>Create Playlist</a></p>
@@ -54,7 +54,7 @@
                      
                     </ul>
                 </div>   
-                <div class="c-content">
+                <div class="c-content" id="c-content">
                     <!-- first category focus -->
                     <div class="navbar-2">
                         <p>
@@ -219,9 +219,84 @@
 
                     
                 </div>
+
+                <div class="c-search" id="c-search">
+                    <div class="search-content">
+                        <p>Browse all</p>
+                        <div class="s-suggestion">
+                            <img class="s-img" src="assets/img/suggestion/podcast.PNG">
+                            <img class="s-img" src="assets/img/suggestion/madeforyou.PNG">
+                            <img class="s-img" src="assets/img/suggestion/newrelease.PNG">
+                            <img class="s-img" src="assets/img/suggestion/charts.PNG">
+                            <img class="s-img" src="assets/img/suggestion/discover.PNG">
+                            <img class="s-img" src="assets/img/suggestion/lifeevents.PNG">
+                            <img class="s-img" src="assets/img/suggestion/inthecar.PNG">
+                            <img class="s-img" src="assets/img/suggestion/wellness.PNG">
+                            <img class="s-img" src="assets/img/suggestion/pride.PNG">
+                            <img class="s-img" src="assets/img/suggestion/pop.PNG">
+                            <img class="s-img" src="assets/img/suggestion/opm.PNG">
+                            <img class="s-img" src="assets/img/suggestion/hiphop.PNG">
+                            <img class="s-img" src="assets/img/suggestion/rnb.PNG">
+                            <img class="s-img" src="assets/img/suggestion/musictalk.PNG">
+                            <img class="s-img" src="assets/img/suggestion/equal.PNG">
+                            <img class="s-img" src="assets/img/suggestion/athome.PNG">
+                            <img class="s-img" src="assets/img/suggestion/radar.PNG">
+                            <img class="s-img" src="assets/img/suggestion/freshfinds.PNG">
+                            <img class="s-img" src="assets/img/suggestion/mood.PNG">
+                            <img class="s-img" src="assets/img/suggestion/ambient.PNG">
+                            <img class="s-img" src="assets/img/suggestion/alternative.PNG">
+                            <img class="s-img" src="assets/img/suggestion/rock.PNG">
+                            <img class="s-img" src="assets/img/suggestion/chill.PNG">
+                            <img class="s-img" src="assets/img/suggestion/christianandgospel.PNG">
+                            <img class="s-img" src="assets/img/suggestion/party.PNG">
+                            <img class="s-img" src="assets/img/suggestion/decades.PNG">
+                            <img class="s-img" src="assets/img/suggestion/kpop.PNG">
+                            <img class="s-img" src="assets/img/suggestion/romance.PNG">
+                            <img class="s-img" src="assets/img/suggestion/sleep.PNG">
+                            <img class="s-img" src="assets/img/suggestion/indie.PNG">
+                            <img class="s-img" src="assets/img/suggestion/danceandelectronics.PNG">
+                            <img class="s-img" src="assets/img/suggestion/caribbean.PNG">
+                            <img class="s-img" src="assets/img/suggestion/workout.PNG">
+                            <img class="s-img" src="assets/img/suggestion/disney.PNG">
+                            <img class="s-img" src="assets/img/suggestion/travel.PNG">
+                            <img class="s-img" src="assets/img/suggestion/trending.PNG">
+                            <img class="s-img" src="assets/img/suggestion/karaoke.PNG">
+                            <img class="s-img" src="assets/img/suggestion/anime.PNG">
+                            <img class="s-img" src="assets/img/suggestion/jazz.PNG">
+                            <img class="s-img" src="assets/img/suggestion/focus.PNG">
+                            <img class="s-img" src="assets/img/suggestion/leagueoflegends.PNG">
+                            <img class="s-img" src="assets/img/suggestion/tastemakers.PNG">
+                            <img class="s-img" src="assets/img/suggestion/word.PNG">
+                            <img class="s-img" src="assets/img/suggestion/artists.PNG">
+                            <img class="s-img" src="assets/img/suggestion/folkandacoustic.PNG">
+                            <img class="s-img" src="assets/img/suggestion/higherground.PNG">
+                            <img class="s-img" src="assets/img/suggestion/jtracks.PNG">
+                            <img class="s-img" src="assets/img/suggestion/soul.PNG">
+                            <img class="s-img" src="assets/img/suggestion/cookinganddining.PNG">
+                            <img class="s-img" src="assets/img/suggestion/tvandmovies.PNG">
+                            <img class="s-img" src="assets/img/suggestion/latin.PNG">
+                            <img class="s-img" src="assets/img/suggestion/bollywood.PNG">
+                            <img class="s-img" src="assets/img/suggestion/gaming.PNG">
+                            <img class="s-img" src="assets/img/suggestion/classical.PNG">
+                            <img class="s-img" src="assets/img/suggestion/country.PNG">
+                            <img class="s-img" src="assets/img/suggestion/metal.PNG">
+                            <img class="s-img" src="assets/img/suggestion/songwriters.PNG">
+                            <img class="s-img" src="assets/img/suggestion/apiheritagemonth.PNG">
+                            <img class="s-img" src="assets/img/suggestion/kidsandfamily.PNG">
+                        
+                        </div>
+                        <div class="hr">
+
+                        </div>
+   
+                    </div>
+                    
+                </div>
+       
             </div>
            
-   
+
+            
           
 
     </div>

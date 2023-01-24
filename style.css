@@ -63,8 +63,9 @@ body{
 .content{
     height:100vh;
     width:100%;
-    background: rgb(173, 84, 84);
+    background: #131517;
     overflow-y:visible;
+    /* display: none; */
     
   
    
@@ -79,7 +80,7 @@ body{
 .content .c-navbar{
     height: 65px;
     width:100%;
-    background-color: #0000007a;
+    background-color: #000000a8;
    position: fixed;
     top:0;
     right:0;
@@ -97,9 +98,11 @@ body{
     padding-left:250px;
     background-color:#171717;
     overflow-y: scroll;
+    
    
 
 }
+
 .content .c-navbar ul{
     width:100%;  
     height: 100%;
@@ -182,7 +185,7 @@ body{
 
 .hiddden-menu{
     width: 100%;
-    height: 500px;
+    height: 100vh;
     position: absolute;
     z-index: 2;
     color: black;
@@ -345,6 +348,45 @@ body{
    
 }
 
+.c-search{
+    height: 100vh;
+    width: 100%;
+    background-color:#171717;
+    overflow-y: scroll;
+    display: none;
+}
+
+.search-content{
+    height: 100%;
+    width: 100%;
+    padding:0 0 0 250px;
+   
+}
+.search-content p{
+    font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.25rem);
+    font-weight: bold;
+    padding: 8rem 0 0 2rem;
+    margin-bottom: 5px;
+    color:white;
+}
+.s-suggestion{
+    width: 100%;
+    padding:0 0 0 2rem;
+    display: inline-block;
+}
+.s-img{
+    width: 100%;
+    max-width: 190px;
+    margin:20px 20px 5px 0;
+    border-radius: 10px;
+    
+
+}
+
+
+
+
+
 .footer{
     width: 100%;
     position: absolute;
@@ -425,6 +467,17 @@ body{
         margin:1rem 0 0 0;
         margin-bottom: 2rem;
     }
+
+    .s-img {
+        width: 100%;
+        max-width: 146px;
+        margin: 8px 8px 5px 0;
+        border-radius: 10px;
+    }
+
+
+
+
 }
 /* MOBILE -LARGE */
 @media screen and (max-width: 425px){
@@ -505,7 +558,13 @@ body{
         margin: -7.9rem 0 0 3rem; 
     }
     
-  
+    .search-content {
+        padding: 0 0 0 117px;
+    }
+
+    .s-img {
+        max-width: 120px;
+    }
 
 }
 
@@ -519,10 +578,14 @@ body{
         margin: -4.2rem 1.5rem 0 1.4rem;
  
     }/* HOVER */
+
+    .s-img {
+        max-width: 94px;
+    }
 }
 
 /* MOBILE -SMALL */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
     .f-description{
         padding-right: 11rem;
     }
@@ -531,5 +594,9 @@ body{
         margin: -5.199999999999999rem 1.5rem 0 1.4rem;
 
     }/* HOVER */
+
+    .s-img {
+        max-width: 87px;
+    }
 }
 
