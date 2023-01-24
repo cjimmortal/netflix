@@ -28,8 +28,6 @@
                     <p class="cookies">Cookies</p>
                 </div>
 
-                
-                
             </div>
             <div class="content">
                 <div class="c-navbar">
@@ -41,11 +39,21 @@
                         <li class="c-list"><a style="color:transparent;">.<div class="vl"></div></a></li>
                         <li class="c-list sign-up" ><a style=" letter-spacing:0px;">Sign up</a></li>
                         <li class="c-list log-in"><a style="color:black; opacity: 1; font-size:14px; letter-spacing:0px;">Log in</a></li>
-                        <li class="c-list menu" ><a id="menu"><img class="s-modules-logo-menu left" src="assets/img/menu.png"></a></li>
+                        <li class="c-list menu" ><a onclick="showMenu()" id="menu"><img class="s-modules-logo-menu left" src="assets/img/menu.png"></a></li>
                     </ul>
                     
                 </div>
-    
+                <div class="hiddden-menu" id="hiddden-menu">
+                    <ul>
+                        <li><img class="close" onclick="hideMenu()" src="assets/img/close.PNG"></li>
+                        <li>Premium</li>
+                        <li>Support</li>
+                        <li>Download</li>
+                        <li>Sign up</li>
+                        <li>Log in</li>
+                     
+                    </ul>
+                </div>   
                 <div class="c-content">
                     <!-- first category focus -->
                     <div class="navbar-2">
@@ -55,7 +63,7 @@
                         </p>
                        
                     </div>
-                    
+                        
                     <div class="playlist" id="playlist">
                         <div class="p-box" onmouseover="hoverPlaylist1(this)" onmouseout="NoHoverPlaylist1(this)">
                             <img class="p-image" src="assets/img/p-piano.PNG">
@@ -72,10 +80,10 @@
                         </div>
 
                         <div class="p-box" onmouseover="hoverPlaylist3(this)" onmouseout="NoHoverPlaylist3(this)">
-                            <img class="p-image" src="assets/img/i-study.png">
+                            <img class="p-image" src="assets/img/i-study.PNG">
                             <p class="p-title">Peaceful Piano</p>
                             <p class="p-description">Focus with soft study music in the background.</p>
-                            <img class="p-f-play3" id="p-f-play3" src="assets/img/play.png">
+                            <img class="p-f-play3" id="p-f-play3" src="assets/img/play.PNG">
                         </div>
 
                         <div class="p-box" onmouseover="hoverPlaylist4(this)" onmouseout="NoHoverPlaylist4(this)">
@@ -137,7 +145,7 @@
                     <div class="navbar-2-sp">
                         <p>
                             <span class="c-2-spotify" id="c-2-spotify">Spotify Playlist</span>
-                            <span class="c-2-showall" id="c-2-showall" onclick="display2ndPlaylist2()">Show all</span>
+                            <span class="c-showall" id="c-2-showall" onclick="display2ndPlaylist2()">Show all</span>
                         </p>
                        
                     </div>
@@ -147,7 +155,7 @@
                             <img class="p-image" src="assets/img/t-hits.PNG">
                             <p class="p-title">Today's Top Hits</p>
                             <p class="p-description">Miley Cyrus is on top of the Hottest 50!</p>
-                            <img class="p-s-play1" id="p-s-play1" src="assets/img/play.png">
+                            <img class="p-s-play1" id="p-s-play1" src="assets/img/play.PNG">
                         </div>
 
                         <div class="p-box" onmouseover="hover2ndPlaylist2(this)" onmouseout="NoHover2ndPlaylist2(this)">

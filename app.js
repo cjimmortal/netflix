@@ -1,3 +1,10 @@
+function showMenu(){
+    document.getElementById("hiddden-menu").style.display="block";
+}
+function hideMenu(){
+    document.getElementById("hiddden-menu").style.display="none";
+}
+
 
 // this code is for category focus
 function  displayPlaylist2(){
