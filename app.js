@@ -7,6 +7,7 @@ function hideMenu(){
 
 function showsearch(){
     document.getElementById("c-search").style.display="block";
+    document.getElementById("search-bar").style.display="block";
     document.getElementById("search").style.opacity="1";
     document.getElementById("home").style.opacity="0.5";
 

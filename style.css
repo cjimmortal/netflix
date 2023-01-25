@@ -250,6 +250,33 @@ body{
     transform: scaleX(-1);
 
 }
+/* this code is to remove the outline whern the search bar is clicked  */
+input:focus, textarea:focus, select:focus{ 
+    outline: none;
+}
+.s-search-icon{
+    margin: -0.1rem 0 0 0.8rem;
+    height: 30px;
+}
+.search-input{
+    height: 34px;
+    width: 261px;
+    margin: 3px 0 0 0.9rem;
+    border: transparent;
+}
+.search-bar{
+    font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
+    background-color: white;
+    border-radius: 50px;
+    width: 350px;
+    height: 40px;
+    text-align: left;
+    margin-top: -0.6rem;
+    display: none;
+
+}
+
+
 .content .c-navbar ul .menu{
     display: none;
 }
@@ -508,12 +535,31 @@ body{
     border-top: 1px solid gray;
     opacity:0.2;
 }
+/* LAPTOP  large*/
+@media screen and (max-width:1200px){ 
+
+    .search-bar{
+        width: 203px;
+    }
+    .search-input {
+        width: 135px;
+    }
+
+}
 /* LAPTOP */
 @media screen and (max-width:1024px){ 
     .content .c-navbar ul li a{
         font-size: 12px;
         letter-spacing: 0;
     }
+    .search-bar{
+        width: 122px;
+    }
+    .search-input {
+        width: 58px;
+    }
+    
+    
 }
 /* TABLET */
 @media screen and (max-width: 768px){
@@ -546,6 +592,22 @@ body{
         border-radius: 10px;
     }
 
+    .search-bar {
+        background-color: white;
+        border-radius: 50px;
+        width: 350px;
+        height: 40px;
+        text-align: left;
+        margin-top: -0.6rem;
+    }
+    .search-bar {
+        width: 280px;
+        position: fixed;
+        margin: -2.2rem 0 0 5rem;
+    }
+    .search-input {
+        width: 210px;
+    }
 
 
 
@@ -649,6 +711,13 @@ body{
         margin: -0.9000000000000014rem 0 0 -3rem;
 
     }
+
+    .search-bar {
+        visibility: hidden;
+    }
+    .search-input {
+        visibility: hidden;
+    }
 }
 
 /* MOBILE -MEDIUM */
@@ -669,6 +738,14 @@ body{
         width: 235px;
         height: 134px;
     }
+
+    .search-bar {
+        visibility: hidden;
+    }
+    .search-input {
+        visibility: hidden;
+    }
+ 
 }
 
 /* MOBILE -SMALL */
@@ -690,5 +767,15 @@ body{
         width: 196px;
         /* height: 134px; */
     }
+
+    .search-bar {
+        visibility: hidden;
+    }
+    .search-input {
+        visibility: hidden;
+    }
+
+    
+
 }
 
