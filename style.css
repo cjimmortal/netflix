@@ -60,6 +60,77 @@ body{
     padding-bottom: 4.5rem;
 }
 
+
+.library-s{
+    margin: -7.6rem 0 0 2rem;
+    display: none;
+}
+.createPlaylist-s {
+    margin: -3.5999999999999996rem 0 0 3rem;
+    display: none;
+}
+.likedSongs-s {
+    margin: -0.9000000000000014rem 0 0 2rem;
+    display: none;
+}
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 21px solid #007bff;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    margin: -2.3rem 0 0 8.3rem;
+}
+
+.login-suggestion-1 {
+    height: 150px;
+    width: 300px;
+    background-color: #007bff;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    margin: -3rem 0 0 9rem;
+}
+
+.title-suggestion {
+    color: white;
+    font-size: clamp(0.625rem, 0.2344rem + 1.25vw, 0.9375rem);
+    font-weight: bold;
+    padding: 1rem 0 5px 1rem;
+    margin-bottom: 0.09999999999999964rem;
+}
+.description-suggestion{
+    color: white;
+    padding: 0 1.5rem 0 1rem;
+    font-size: clamp(0.625rem, 0.3125rem + 1vw, 0.875rem);
+
+}
+.buttons-suggestion{
+    display: flex;
+    float: right;
+    margin-top: -0.4rem;
+  
+}
+
+.button-cancel {
+    color: white;
+    font-weight: bold;
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+    padding-right: 0rem;
+    padding-top: 9px;
+}
+.button-confirm {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+    padding: 0.6rem 1.5rem 0rem 1.5rem;
+    margin: 0 1rem 0rem 1rem;
+    border-radius: 25px;
+}
+
 .content{
     height:100vh;
     width:100%;
@@ -333,7 +404,7 @@ body{
 
 .p-f-play1, .p-f-play2, .p-f-play3, .p-f-play4, .p-f-play5 , .p-s-play1, .p-s-play2, .p-s-play3, .p-s-play4, .p-s-play5{
     position: sticky;
-    z-index: 1;
+    z-index: 0;
     margin: -10.5rem 0 0 6rem;
     display: none;
     padding:0;
@@ -341,7 +412,7 @@ body{
 }
 .p-f-play6, .p-f-play7, .p-f-play8, .p-f-play9, .p-f-play10, .p-s-play6, .p-s-play7, .p-s-play8, .p-s-play9, .p-s-play10{
     position: sticky;
-    z-index: 1;
+    z-index: 0;
     margin: -10.5rem 0 0 6rem;
     display: none;
    
@@ -566,6 +637,18 @@ body{
         max-width: 120px;
     }
 
+    .library-s{
+        margin: -7.6rem 0 0 -3rem;
+ 
+    }
+    .createPlaylist-s {
+        margin: -3.5999999999999996rem 0 0 -3rem;
+
+    }
+    .likedSongs-s {
+        margin: -0.9000000000000014rem 0 0 -3rem;
+
+    }
 }
 
 /* MOBILE -MEDIUM */
@@ -582,6 +665,10 @@ body{
     .s-img {
         max-width: 94px;
     }
+    .login-suggestion-1 {
+        width: 235px;
+        height: 134px;
+    }
 }
 
 /* MOBILE -SMALL */
@@ -597,6 +684,11 @@ body{
 
     .s-img {
         max-width: 87px;
+    }
+
+    .login-suggestion-1 {
+        width: 196px;
+        /* height: 134px; */
     }
 }
 

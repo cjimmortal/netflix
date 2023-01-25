@@ -20,14 +20,50 @@
                 <div class="s-modules">
                     <p id="home"  onclick="showhome()" style="opacity: 1;"><img class="s-modules-logo" src="assets/img/home.png"><a>Home</a></p>
                     <p id="search" onclick="showsearch()"><img class="s-modules-logo" src="assets/img/search.png"><a>Search</a></p>
-                    <p><img class="s-modules-logo" src="assets/img/library.png"><a>Your Library</a></p>
+                    <p onclick="showlibrary()"><img class="s-modules-logo" src="assets/img/library.png"><a>Your Library</a></p>
                     <br>
-                    <p><img class="s-modules-logo" src="assets/img/create.png"><a>Create Playlist</a></p>
-                    <p><img class="s-modules-logo" src="assets/img/liked.PNG"><a>Liked Songs</a></p>
+                    <p onclick="showcreateplaylist()"><img class="s-modules-logo" src="assets/img/create.png"><a>Create Playlist</a></p>
+                    <p onclick="showlikedSongs()"><img class="s-modules-logo" src="assets/img/liked.PNG"><a>Liked Songs</a></p>
                     
                     <p class="cookies">Cookies</p>
                 </div>
 
+                <div class="library-s" id="library-s">
+                    <div class="triangle-left "></div>
+                    <div class="login-suggestion-1">
+                        <p class="title-suggestion">Enjoy Your Library</p>
+                        <p class="description-suggestion">Log in to see saved songs, podcast, artist, and playlists in Your Library.</p>
+                        <div class="buttons-suggestion">
+                            <p onclick="buttonScancel()" class="button-cancel">Not now</p>
+                            <p class="button-confirm">Login</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="createPlaylist-s " id="createPlaylist-s">
+                    <div class="triangle-left "></div>
+                    <div class="login-suggestion-1">
+                        <p class="title-suggestion">Create Playlist</p>
+                        <p class="description-suggestion">Log in to create and share playlist.</p><br>
+                        <div class="buttons-suggestion">
+                            <p onclick="buttonScancel()" class="button-cancel">Not now</p>
+                            <p class="button-confirm">Login</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="likedSongs-s " id="likedSongs-s">
+                    <div class="triangle-left "></div>
+                    <div class="login-suggestion-1">
+                        <p class="title-suggestion">Enjoy Your Liked Songs</p>
+                        <p class="description-suggestion">Log in to see all the songs you've liked in on easy playlist</p>
+                        <div class="buttons-suggestion">
+                            <p onclick="buttonScancel()" class="button-cancel">Not now</p>
+                            <p class="button-confirm">Login</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="content">
                 <div class="c-navbar">

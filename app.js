@@ -11,10 +11,37 @@ function showsearch(){
     document.getElementById("home").style.opacity="0.5";
 
     document.getElementById("c-content").style.display="none";
+
+    document.getElementById("library-s").style.display="none";
+    document.getElementById("createPlaylist-s").style.display="none";
+    document.getElementById("likedSongs-s").style.display="none";
 }
 
 function showhome(){
     window.location.reload();
+}
+
+function showlibrary(){
+    document.getElementById("library-s").style.display="block";
+    document.getElementById("createPlaylist-s").style.display="none";
+    document.getElementById("likedSongs-s").style.display="none";
+}
+
+function showcreateplaylist(){
+    document.getElementById("createPlaylist-s").style.display="block";
+    document.getElementById("library-s").style.display="none";
+    document.getElementById("likedSongs-s").style.display="none";
+}
+function showlikedSongs(){
+    document.getElementById("likedSongs-s").style.display="block";
+    document.getElementById("createPlaylist-s").style.display="none";
+    document.getElementById("library-s").style.display="none";
+    
+}
+function buttonScancel(){
+    document.getElementById("library-s").style.display="none";
+    document.getElementById("createPlaylist-s").style.display="none";
+    document.getElementById("likedSongs-s").style.display="none";
 }
 
 
